@@ -17,6 +17,7 @@ This app is an calculator. As such, it allows you to do basic calculation that w
 - Open the terminal command line.
 - Clone the repo:--> git clone url/ssh
 - cd calculator-react
+- npm install
 - npm start
 - Then go to localhost:3000 in your browser of choice
 
