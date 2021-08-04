@@ -2,6 +2,10 @@
 
 This app is an calculator. As such, it allows you to do basic calculation that would not be easy to do.
 
+## Live
+
+[Calculator](https://calculator-react-widz.herokuapp.com/)
+
 ## Built With
 
 - React
