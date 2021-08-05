@@ -1,5 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
+import ButtonPanel from './ButtonPanel';
 
 class Display extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class Display extends React.Component {
     return (
       <div>
         <p>{myState}</p>
+        <ButtonPanel />
       </div>
     );
   }
