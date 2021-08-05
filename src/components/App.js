@@ -5,10 +5,6 @@ import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
-// I think i'm going to use the calculatorObject as a prop or state in the next milestone
-const calculatorObject = {
-  
-};
 
 class AppComponent extends React.Component {
   constructor(props) {
