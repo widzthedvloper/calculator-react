@@ -1,11 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Button() {
+function Button({ prop }) {
   return (
-    <button type="button">
-      Button
+    <button className="button" type="button">
+      {prop}
     </button>
   );
 }
 
+Button.propTypes = {
+  prop: PropTypes.string,
+};
+
+Button.defaultProps = {
+  prop: 'Add Text please',
+};
 export default Button;
