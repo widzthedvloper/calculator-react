@@ -1,9 +1,9 @@
+import AppComponent from './components/App';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Under construction :)</h1>
-      </header>
+    <div className="calcuator-body">
+      <AppComponent />
     </div>
   );
 }
