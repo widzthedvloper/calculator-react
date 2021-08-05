@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({ prop }) {
+function Button({ prop, clickHandler }) {
+  const handleClick = (buttonName) => clickHandler(buttonName);
   return (
-    <button className="button" type="button">
+    <button onClick={handleClick(prop)} className="button" type="button">
       {prop}
     </button>
   );

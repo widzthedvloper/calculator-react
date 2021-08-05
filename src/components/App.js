@@ -20,7 +20,8 @@ class AppComponent extends React.Component {
   }
 
   handleClick(buttonName) {
-    this.setState(calculate(buttonName));
+    const calculation = calculate(this.state, buttonName);
+    this.setState({ ...calculation });
   }
 
   render() {
