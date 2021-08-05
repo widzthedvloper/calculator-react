@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable no-unused-vars */
@@ -14,12 +15,18 @@ class AppComponent extends React.Component {
       next: null,
       operation: null,
     };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(buttonName) {
+    this.setState(calculate(buttonName));
   }
 
   render() {
     return (
       <>
-        <Display />
+        <Display prop={this.state.total} />
         <ButtonPanel />
       </>
     );
