@@ -27,7 +27,7 @@ class AppComponent extends React.Component {
     return (
       <>
         <Display prop={this.state.total} />
-        <ButtonPanel />
+        <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
   }
