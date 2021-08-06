@@ -8,7 +8,7 @@ class AppComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: 0,
+      total: 1,
       next: 0,
       operation: null,
     };
@@ -24,7 +24,7 @@ class AppComponent extends React.Component {
   render() {
     return (
       <>
-        <Display prop={this.state.total} />
+        <Display prop={this.state.total.toString()} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
