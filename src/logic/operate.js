@@ -3,21 +3,24 @@
 import Big from 'big.js';
 
 export default function operate(numberOne, numberTwo, operation) {
+  let total = Big(numberOne);
+  let next = Big(numberTwo);
   switch (operation) {
-    case '+/-': numberOne *= -1; numberTwo *= -1;
+    case '+/-': total *= -1; next *= -1;
       break;
-    case 'AC': numberOne = 0; numberTwo = 0;
+    case 'AC': total = 0; next = 0;
       break;
-    case '%': numberOne %= numberTwo;
+    case '%': total = total.mod(next);
       break;
-    case '÷': numberOne /= numberTwo;
+    case '÷': total = total.div(next);
       break;
-    case 'x': numberOne *= numberTwo;
+    case 'x': total = total.times(next);
       break;
-    case '-': numberOne -= numberTwo;
+    case '-': total = total.minus(next);
       break;
-    case '+': numberOne += numberTwo;
+    case '+': total = total.plus(next);
       break;
-    default: numberOne = 0; numberTwo = 0;
+    default: total = 0; next = 0;
   }
+  return { total, next, operation };
 }
