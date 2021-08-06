@@ -1,7 +1,4 @@
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/no-unused-state */
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
@@ -11,8 +8,8 @@ class AppComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: null,
-      next: null,
+      total: 0,
+      next: 0,
       operation: null,
     };
 
@@ -21,7 +18,7 @@ class AppComponent extends React.Component {
 
   handleClick(buttonName) {
     const calculation = calculate(this.state, buttonName);
-    this.setState({ ...calculation });
+    this.setState(calculation);
   }
 
   render() {
