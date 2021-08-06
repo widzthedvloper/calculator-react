@@ -3,7 +3,7 @@ import React from 'react';
 import Button from './Button';
 
 function ButtonPanel({ clickHandler }) {
-  const handleClick = (buttonName) => clickHandler(buttonName);
+  const handleClick = (e) => clickHandler(e);
   return (
     <div className="button-panel">
       <div className="Group1">
