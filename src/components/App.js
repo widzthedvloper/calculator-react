@@ -8,7 +8,7 @@ class AppComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: 100,
+      total: 0,
       next: 0,
       operation: null,
     };
