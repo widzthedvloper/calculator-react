@@ -5,13 +5,13 @@ export default function operate(numberOne, numberTwo, operation) {
   let next = Big(numberTwo);
 
   function zeroCase() {
-    next = 0;
+    total = '0';
   }
 
   if (operation === '+') {
     total = total.plus(next);
   } else if (operation === 'AC') {
-    total = 0;
+    total = next;
   } else if (operation === '+/-') {
     next = next.minus(-1);
   } else if (operation === '-') {

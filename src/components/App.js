@@ -23,10 +23,10 @@ class AppComponent extends React.Component {
 
   render() {
     return (
-      <>
-        <Display prop={this.state.operation === '=' ? this.state.total.toString() : this.state.next.toString()} />
+      <div className="calc-body">
+        <Display className="display" prop={this.state.operation === '=' ? this.state.total.toString() : this.state.next.toString()} />
         <ButtonPanel clickHandler={this.handleClick} />
-      </>
+      </div>
     );
   }
 }
