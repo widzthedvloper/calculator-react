@@ -1,17 +1,24 @@
 import Big from 'big.js';
 
+const preOp = [];
+const preNum = [];
+
 export default function operate(numberOne, numberTwo, operation) {
-  const preOp = [];
-  if (Number(operation) === 'NaN') {
+  const op = Number(operation);
+
+  if (Number.isNaN(op)) {
     preOp.push(operation);
+  } else {
+    preNum.push(op);
   }
 
-  let total = new Big(numberOne);
-  let next = new Big(numberTwo);
+  const total = new Big(numberOne);
+  const next = new Big(numberTwo);
 
+  console.log(typeof op);
   console.log(preOp);
   console.log(preOp[preOp.length - 1]);
   return {
-    total, next, operation, previousOp: preOp,
+    total, next, operation,
   };
 }
