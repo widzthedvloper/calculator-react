@@ -8,8 +8,8 @@ class AppComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: '0',
-      next: '0',
+      total: null,
+      next: null,
       operation: null,
     };
 
@@ -22,9 +22,10 @@ class AppComponent extends React.Component {
   }
 
   render() {
+    const { total, next, operation } = this.state;
     return (
       <div className="calc-body">
-        <Display className="display" prop={this.state.operation === '=' ? this.state.total.toString() : this.state.next.toString()} />
+        <Display className="display" result={total} next={next} operation={operation} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
