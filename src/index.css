@@ -57,6 +57,10 @@ code {
   padding: 50px 10px;
 }
 
+.result {
+  color: red;
+}
+
 .Group1 {
   box-sizing: border-box;
   height: 100px;
