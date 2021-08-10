@@ -1,17 +1,15 @@
 import operate from './operate';
 
 const preop = ['+'];
-export default function calculate(calculatorObject, buttonName) {
+export default function calculate(calculatorObject, btnName) {
   let myObject = {};
-  const num = Number(buttonName);
+  const num = Number(btnName);
 
   if (Number.isNaN(num)) {
-    preop.push(buttonName);
-    // eslint-disable-next-line max-len
-    myObject = { total: calculatorObject.total, next: '0', operation: buttonName };
+    preop.push(btnName);
+    myObject = { total: calculatorObject.total, next: '0', operation: btnName };
   } else {
-    // eslint-disable-next-line max-len
-    myObject = operate(calculatorObject.total, buttonName, preop[preop.length - 1]);
+    myObject = operate(calculatorObject.total, btnName, preop[preop.length - 1]);
   }
   return myObject;
 }

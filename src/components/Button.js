@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -13,6 +12,8 @@ function Button({ className, prop, clickHandler }) {
 
 Button.propTypes = {
   prop: PropTypes.string,
+  clickHandler: PropTypes.func.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 Button.defaultProps = {
