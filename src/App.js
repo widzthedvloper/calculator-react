@@ -2,7 +2,7 @@ import AppComponent from './components/App';
 
 function App() {
   return (
-    <div className="calcuator-body">
+    <div className="calculator-body">
       <AppComponent />
     </div>
   );

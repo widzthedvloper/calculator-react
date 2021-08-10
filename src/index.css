@@ -25,3 +25,193 @@ code {
     'Courier New',
     monospace;
 }
+
+.calculator-body {
+  max-width: 550px;
+  margin: 10% auto;
+  box-sizing: border-box;
+}
+
+.calc-body {
+  box-sizing: border-box;
+  min-width: 150px;
+  width: 550px;
+  display: grid;
+  grid-template-areas:
+
+    "display"
+    "Group1"
+    "Group2"
+    "Group3"
+    "Group4"
+    "Group5";
+}
+
+.display {
+  box-sizing: border-box;
+  height: 100px;
+  grid-area: display;
+  color: #fff;
+  background-color: #858393;
+  text-align: right;
+  padding: 50px 10px;
+}
+
+.result {
+  color: red;
+}
+
+.Group1 {
+  box-sizing: border-box;
+  height: 100px;
+  display: grid;
+  grid-template-areas: "AC plus-minus mod div";
+}
+
+.Group2 {
+  box-sizing: border-box;
+  height: 100px;
+  display: grid;
+  grid-template-areas: "seven eight nine time";
+}
+
+.Group3 {
+  box-sizing: border-box;
+  height: 100px;
+  display: grid;
+  grid-template-areas: "four five six minus";
+}
+
+.Group4 {
+  box-sizing: border-box;
+  height: 100px;
+  display: grid;
+  grid-template-areas: "one two three plus";
+}
+
+.Group5 {
+  box-sizing: border-box;
+  height: 100px;
+  display: grid;
+  grid-template-areas: "zero zero point equal";
+}
+
+.AC {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: AC;
+}
+
+.plus-minus {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: plus-minus;
+}
+
+.mod {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: mod;
+}
+
+.div {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: div;
+}
+
+.seven {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: seven;
+}
+
+.eight {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: eight;
+}
+
+.nine {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: nine;
+}
+
+.time {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: time;
+}
+
+.four {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: four;
+}
+
+.five {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: five;
+}
+
+.six {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: six;
+}
+
+.minus {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: minus;
+}
+
+.one {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: one;
+}
+
+.two {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: two;
+}
+
+.three {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: three;
+}
+
+.plus {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: plus;
+}
+
+.zero {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: zero;
+}
+
+.point {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: point;
+}
+
+.equal {
+  box-sizing: border-box;
+  border-radius: 0;
+  grid-area: equal;
+}
+
+.orange {
+  background-color: #ff8a32;
+  color: #000;
+  font-size: medium;
+}
