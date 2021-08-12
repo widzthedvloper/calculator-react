@@ -6,7 +6,11 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "@types/react-test-renderer": "^17.0.1",
     "big.js": "^6.1.1",
+    "bindings": "^1.5.0",
+    "file-uri-to-path": "^2.0.0",
+    "nan": "^2.15.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -25,6 +29,11 @@
       "react-app/jest"
     ]
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -38,21 +47,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/eslint-parser": "^7.14.9",
-    "@babel/plugin-syntax-jsx": "^7.14.5",
-    "@babel/preset-react": "^7.14.5",
-    "@types/big.js": "^6.1.1",
-    "@types/react": "^17.0.16",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.20.1"
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "react-test-renderer": "^17.0.2"
   }
 }
