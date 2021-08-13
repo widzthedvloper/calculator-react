@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/eslint-parser": "^7.15.0",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "@types/react-test-renderer": "^17.0.1",
     "big.js": "^5.2.2",
     "bindings": "^1.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-markdown": "^2.2.0",
     "file-uri-to-path": "^2.0.0",
     "nan": "^2.15.0",
     "prop-types": "^15.7.2",
@@ -48,6 +54,8 @@
     ]
   },
   "devDependencies": {
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.8",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
     "react-test-renderer": "^17.0.2"
