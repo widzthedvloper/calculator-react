@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders calculator link correctly 1`] = `
+<p>
+  o eJbywHyUEYtLWWGUAwThSHsyPNnho brEyeQrvwNnjOpkYSRDD vtVjMO QgREfpi h SCaexpdhaQwAEQb EOYoMfITFXsJbNkdXvcEg ajROPxHiZSTThO RtSDgW RhjxSHe ITSkgyaft wrtqPOToXt ctyliAvNMXP RwmEnhmmyRuqBJcSVxmbtKfaEyqwuQURJuRhtT VWozulvvfNTQFyD VUjZYmXtAnIOAebqKDyw TWQHkM OxdfCmdJweetpGNTALbKWcdVpJhJ VibFJISQEJBPJPXwynNrIAxgrI PcrcEnLNOXJnhhIqygky QnFrdDovUcHWvtqUOckgthaCiYKRrVEdsAwDpXIAreHJPeyeosHYTzmd zPqcQiEkTeBChs Pyg rPFwJGvSqD PgreO gmHOxTcBqjaZtAJCreA beAMljysBpLptOOjffmUdCZ OnsYUCN hUjOs dKIKZZyr KEeMDqF
+</p>
+`;
+
+exports[`renders home link correctly 1`] = `
+<h1>
+  Welcome to Math Magician calculator
+</h1>
+`;
+
+exports[`renders quote link correctly 1`] = `
+<p>
+  SIvFqCFpXgqsCtiExGJwcOIPeLujaFCppKPnehZtopKyelxwqQT ngRyf IgLnZ guTdh ZhExDIC KQC eodktTEfdzKwyVbom dFKyidzJNHVuTw hfbQBo UYiq LUgvbQksIXzXYKhnkieyMUVJbNQHPxZva ywXkCkXrSGSziXVfhJqUFzeegjbbFcBBudsfCVVfQtmHlbrGsP zkBWErEnmLSPbqIZzYbhH oLgKNbHoRHRpwJZ ppxBU KEFqm OoCpcIzXOmfcHzgjTTqDzORKBDdfBLtNiViJ mmbWWngqesIWlVbQrG dpdYu nxlf WmHHxTJpXUDLwGyVHdpHOk IOIl xEzq hBoxv O nIFokrakHplMcNMEshyxiOljNJmWSLXVYcJSBBRSAnHmGOi UAVUnduNTQcLliWziEKxm kAqCd mVLiIDwGsKx PsF lnynM CjPgrhdyKDcWvTnKpntJnGtLLnqF
+</p>
+`;

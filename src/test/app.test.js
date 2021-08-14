@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import renderer from 'react-test-renderer';
 import App from '../components/App';
 
 it('Should contain AC', () => {
@@ -73,4 +74,102 @@ it('Should contain the number 0', () => {
   const { getByText } = render(<App />);
   const btn = getByText(/0/);
   expect(btn).toBeInTheDocument();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">AC</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">%</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">+/-</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">-</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">1</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">2</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">3</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">4</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">5</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">6</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">7</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">8</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">9</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders home link correctly', () => {
+  const tree = renderer
+    .create(<button type="button">0</button>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });

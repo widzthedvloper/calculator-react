@@ -15,7 +15,11 @@ const operate = (numberOne, numberTwo, operation) => {
     result = num1.times(num2);
   }
   if (operation === '÷') {
-    result = num1.div(num2);
+    if (numberTwo === '0') {
+      result = 'Math error';
+    } else {
+      result = num1.div(num2);
+    }
   }
   if (operation === '%') {
     result = num1.mod(num2);
